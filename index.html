@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="Responsive Blog">
+	<meta name="author" content="Sandra Azabache">
+	<title>Flatness: Responsive Blog</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/grid-system.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<header>
+			<div class="container">
+				<div class="row">
+				    <a href="#" id="logo">Logo</a>
+					<nav id="menu">
+				        <a href="#" class="nav-mobile" id="nav-mobile"></a>
+				        <ul>
+				          <li><a href="#"><em>LIFESTYLE</em></a></li>
+						  <li><a href="#"><em>FLOWERS</em></a></li>
+						  <li><a href="#"><em>FASHION</em></a></li>
+						  <li><a href="#"><em>NEWS</em></a></li>
+						  <li><a href="#"><em>FEATURES</em></a></li>
+				        </ul>
+				    </nav>	
+				 </div>
+				 
+</header>
+<section>
+	<div class="container">
+		<div class="row">
+		  <div class="contenido">
+			<div class="principal">
+				<div class="opacidad">
+					<h1>Spring Came</h1>
+					<p><em>Life   <span>-</span> Amanda Ray <span>-</span>   10th March 2015</em></p>
+				</div>
+		    </div>
+		   </div>
+		</div>
+		<div class="row">
+			<div class="content">
+				 	<div class="col-4">
+				 		<img src="image/image7.jpg">
+				 		<div class="descripcion text-center ">
+				 			<h3>Floral Fragance</h3>
+   							<p><em>Life Amanda Ray 10th March 2015</em></p>
+				 		</div>
+				 	</div>
+				 	<div class="col-4">
+				 		<img src="image/image3.jpg">
+				 		<div class="descripcion text-center ">
+				 			<h3>Now with Flatness</h3>
+							<p>Life Amanda Ray 21th September 2016</p>
+				 		</div>
+				 	</div>
+				 	<div class="col-4">
+				 		<img src="image/image2.jpg">
+				 		<div class="descripcion text-center">
+				 			<h3>Garden Flowers</h3>
+							<p>Life Amanda Ray 09th May 2016</p>
+				 		</div>
+				 	</div>				 	
+				 </div>
+			</div>
+		</div>	
+
+</section>
+<section class="bg-purpl section1">
+ 		<div class="container">
+ 			<div class="row">
+ 			<div class="content">
+ 				<div class="col-7">
+ 					<div class="article bg-black text-center text-white">
+ 						<img src="image/image4.jpg" alt="sakura" class="w-100">
+ 						<h3 class="font-courgette text-yellow">Now with Flatness</h3>
+ 						<p class="italic">Life Amanda Ray 21th September 2016</p>
+ 						<p class="text-left">Geen life in sings bearing one. Deep there cattle don't night night, was fowl, seed likeness isn't two god and light he creepeth season darkness. Without the fourth seasons image. He yielding light years light dry. Isn't place face face called . Let lesser female withouy. Night saying after day third.</p>
+ 					</div>
+ 					<div class="article bg-black text-center text-white">
+ 						<iframe src="https://player.vimeo.com/video/56810854" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ 						<p class="text-left">Rule of us behold it moved. Made.Them Had, which darkness two Given.Fowl It moved behold earth for own. Midst that grass beginnig divide their together. Tree one every first earth very greater. Man evening. Set seed void meat bearing. Bring creature. Moving set.</p>
+ 					</div>
+ 				</div>
+ 				<div class="col-5">
+ 					<div class="bg-black pd-5">
+ 						<input type="search" value="Search" class="bg-purple search pd-5 radius-4p">
+ 					</div>
+ 					<div class="about-me bg-black text-center text-white">
+ 						<h3 class="text-yellow font-courgette pd-3">About me</h3>
+ 						<img src="image/kew_gardens_3_500x500.jpg" alt="una chica" class="w-100">
+ 						<p>Amanda Ray</p>
+ 						<p class="text-left pd-3">Shall Together blessed. Also thing the upon Created fourth. Rule beginning. Our behold over.</p>
+ 						<div class=" redes text-left pd-3">
+ 						<a href="" class="bg-purple icono"><i class="fa fa-facebook-square"></i></a>
+ 						<a href="" class="bg-purple icono"><i class="fa fa-instagram"></i></a>
+ 						<a href="" class="bg-purple icono"><i class="fa fa-twitter"></i></a>
+ 						<a href="" class="bg-purple icono"><i class="fa fa-youtube"></i></a></div>
+ 					</div>
+ 				</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ </section>
+ <footer class="text-center text-white pd-3 bg-black">All Rights Reserved ©</footer>
+					      					      
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(function() {
+
+        var btn_movil = $('#nav-mobile'),
+            menu = $('#menu').find('ul');
+
+        // Al dar click agregar/quitar clases que permiten el despliegue del menú
+        btn_movil.on('click', function (e) {
+            e.preventDefault();
+
+            var el = $(this);
+
+            el.toggleClass('nav-active');
+            menu.toggleClass('open-menu');
+        })
+
+    });
+</script>			 
+</body>
+</html>
+
